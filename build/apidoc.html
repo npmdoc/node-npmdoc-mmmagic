@@ -1,0 +1,383 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+    >mmmagic (v0.4.5)</a>
+</h1>
+<h4>An async libmagic binding for node.js for detecting content types by data inspection</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mmmagic">module mmmagic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mmmagic.Magic">
+            function <span class="apidocSignatureSpan">mmmagic.</span>Magic
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_APPLE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_CHECK</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_CONTINUE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_DEBUG</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_DEVICES</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_MIME</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_MIME_ENCODING</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_MIME_TYPE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_NONE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_NO_CHECK_APPTYPE</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_NO_CHECK_CDF</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_NO_CHECK_ELF</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_NO_CHECK_ENCODING</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_NO_CHECK_SOFT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_NO_CHECK_TAR</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_NO_CHECK_TEXT</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_NO_CHECK_TOKENS</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_PRESERVE_ATIME</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_RAW</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">number <span class="apidocSignatureSpan">mmmagic.</span>MAGIC_SYMLINK</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">mmmagic.</span>Magic.prototype</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mmmagic.Magic">module mmmagic.Magic</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mmmagic.Magic.Magic">
+            function <span class="apidocSignatureSpan">mmmagic.</span>Magic
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.mmmagic.Magic.prototype">module mmmagic.Magic.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mmmagic.Magic.prototype.detect">
+            function <span class="apidocSignatureSpan">mmmagic.Magic.prototype.</span>detect
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.mmmagic.Magic.prototype.detectFile">
+            function <span class="apidocSignatureSpan">mmmagic.Magic.prototype.</span>detectFile
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mmmagic" id="apidoc.module.mmmagic">module mmmagic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mmmagic.Magic" id="apidoc.element.mmmagic.Magic">
+        function <span class="apidocSignatureSpan">mmmagic.</span>Magic
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Magic() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mmmagic.Magic" id="apidoc.module.mmmagic.Magic">module mmmagic.Magic</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mmmagic.Magic.Magic" id="apidoc.element.mmmagic.Magic.Magic">
+        function <span class="apidocSignatureSpan">mmmagic.</span>Magic
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Magic() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.mmmagic.Magic.prototype" id="apidoc.module.mmmagic.Magic.prototype">module mmmagic.Magic.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.mmmagic.Magic.prototype.detect" id="apidoc.element.mmmagic.Magic.prototype.detect">
+        function <span class="apidocSignatureSpan">mmmagic.Magic.prototype.</span>detect
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function detect() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+* Get general description of the contents of a Buffer:
+```javascript
+  var Magic = require(&#x27;mmmagic&#x27;).Magic;
+
+  var magic = new Magic(),
+        buf = new Buffer(&#x27;import Options\nfrom os import unlink, symlink&#x27;);
+
+  magic.<span class="apidocCodeKeywordSpan">detect</span>(buf, function(err, result) {
+      if (err) throw err;
+      console.log(result);
+      // output: Python script, ASCII text executable
+  });
+```
+
+API
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.mmmagic.Magic.prototype.detectFile" id="apidoc.element.mmmagic.Magic.prototype.detectFile">
+        function <span class="apidocSignatureSpan">mmmagic.Magic.prototype.</span>detectFile
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function detectFile() { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+========
+
+* Get general description of a file:
+```javascript
+  var Magic = require(&#x27;mmmagic&#x27;).Magic;
+
+  var magic = new Magic();
+  magic.<span class="apidocCodeKeywordSpan">detectFile</span>(&#x27;node_modules/mmmagic/build/Release/magic.node&#x27;, function
+(err, result) {
+      if (err) throw err;
+      console.log(result);
+      // output on Windows with 32-bit node:
+      //    PE32 executable (DLL) (GUI) Intel 80386, for MS Windows
+  });
+```
+* Get mime type for a file:
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
