@@ -47,7 +47,7 @@
 }
 </style>
 <h1>api documentation for
-    <a>mmmagic (v0.4.5)</a>
+    <a href="https://github.com/mscdex/mmmagic#readme">mmmagic (v0.4.5)</a>
 </h1>
 <h4>An async libmagic binding for node.js for detecting content types by data inspection</h4>
 <div class="apidocSectionDiv"><a href="#apidoc.tableOfContents" id="apidoc.tableOfContents"><h1>table of contents</h1></a><ol>
@@ -240,7 +240,23 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function Magic() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var t = -1;
+var group = path.basename(__filename, '.js') + '/';
+var timeout;
+
+var tests = [
+{ run: function() {
+    var magic = new mmm.<span class="apidocCodeKeywordSpan">Magic</span>(mmm.MAGIC_MIME_TYPE);
+    magic.detectFile(path.join(__dirname, '..', 'src', 'binding.cc'),
+                     function(err, result) {
+      assert.strictEqual(err, null);
+      assert.strictEqual(result, 'text/x-c++');
+      next();
+    });
+  },
+...</pre></li>
     </ul>
 
 
@@ -300,7 +316,23 @@
     </h2>
     <ul>
     <li>description and source-code<pre class="apidocCodePre">function Magic() { [native code] }</pre></li>
-    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+var t = -1;
+var group = path.basename(__filename, '.js') + '/';
+var timeout;
+
+var tests = [
+{ run: function() {
+    var magic = new mmm.<span class="apidocCodeKeywordSpan">Magic</span>(mmm.MAGIC_MIME_TYPE);
+    magic.detectFile(path.join(__dirname, '..', 'src', 'binding.cc'),
+                     function(err, result) {
+      assert.strictEqual(err, null);
+      assert.strictEqual(result, 'text/x-c++');
+      next();
+    });
+  },
+...</pre></li>
     </ul>
 
 
