@@ -1,6 +1,6 @@
 # npmdoc-mmmagic
 
-#### api documentation for  mmmagic (v0.4.5)  [![npm package](https://img.shields.io/npm/v/npmdoc-mmmagic.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mmmagic) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mmmagic.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mmmagic)
+#### basic api documentation for  [mmmagic (v0.4.5)](https://github.com/mscdex/mmmagic#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-mmmagic.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-mmmagic) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-mmmagic.svg)](https://travis-ci.org/npmdoc/node-npmdoc-mmmagic)
 
 #### An async libmagic binding for node.js for detecting content types by data inspection
 
@@ -21,21 +21,27 @@
 ```json
 
 {
-    "name": "mmmagic",
-    "version": "0.4.5",
-    "author": "Brian White <mscdex@mscdex.net>",
-    "description": "An async libmagic binding for node.js for detecting content types by data inspection",
-    "main": "./lib/index",
+    "author": {
+        "name": "Brian White"
+    },
+    "bugs": {
+        "url": "https://github.com/mscdex/mmmagic/issues"
+    },
     "dependencies": {
         "nan": "^2.4.0"
     },
-    "scripts": {
-        "install": "node-gyp rebuild",
-        "test": "node test/test.js"
+    "description": "An async libmagic binding for node.js for detecting content types by data inspection",
+    "devDependencies": {},
+    "directories": {},
+    "dist": {
+        "shasum": "883468e4423a75937674350018c4062d215eb2e2",
+        "tarball": "https://registry.npmjs.org/mmmagic/-/mmmagic-0.4.5.tgz"
     },
     "engines": {
         "node": ">=0.10.0"
     },
+    "gypfile": true,
+    "homepage": "https://github.com/mscdex/mmmagic#readme",
     "keywords": [
         "magic",
         "libmagic",
@@ -50,10 +56,24 @@
             "url": "http://github.com/mscdex/mmmagic/raw/master/LICENSE"
         }
     ],
+    "main": "./lib/index",
+    "maintainers": [
+        {
+            "name": "mscdex"
+        }
+    ],
+    "name": "mmmagic",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
-        "url": "http://github.com/mscdex/mmmagic.git"
-    }
+        "url": "git+ssh://git@github.com/mscdex/mmmagic.git"
+    },
+    "scripts": {
+        "install": "node-gyp rebuild",
+        "test": "node test/test.js"
+    },
+    "version": "0.4.5",
+    "bin": {}
 }
 ```
 
